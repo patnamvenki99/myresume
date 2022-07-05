@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <title>Venki Patnam Resume</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,400;1,600&display=swap');
+
+        * {
+            font-family: poppins;
+            margin: 0;
+
+        }
+
+        body {
+            padding : 1em 2em;
+            max-width: 1080px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .resumeContent {
+            border: solid;
+            /* box-shadow: 5px 5px #888888; */
+            box-shadow: 7px -7px 7px #CCC;
+            padding: 0.5em 1em;
+        }
+
+
+        header {
+            margin: 1em;
+        }
+
+        header > * {
+            /* font-weight: bold; */
+            font-style: italic;
+            text-align: center;
+        }
+
+        .subHeading {
+            font-weight: bold;
+            font-size: 1.1em;
+            color: rgb(0, 145, 255);
+        }
+
+        .highlights {
+            font-weight: bold;
+        }
+
+        .gitHubLink {
+            text-decoration: none;
+            color: blue;
+        }
+
+
+        div {
+            /* border-style: solid; */
+            /* border-color: black;
+            border-width: 0.1em; */
+            margin: 0.5em;
+        }
+
+        .header {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr;
+        }
+
+        .projectDetails {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr auto;
+
+            transition: max-height 1s ease-out;
+        }
+
+        .projectDetails .summary {
+            grid-column: 1 / -1;
+            padding-left: 1em;
+        }
+
+        .projectDetails .responsibilities {
+            grid-column: 1 / -1;
+        }
+
+        .projectDetails .responsibilities {
+            grid-column: 1 / -1;
+        }
+
+        .collapsible {
+            cursor: pointer;
+            padding: 0.7em;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 1em;
+        }
+        
+        .active, .collapsible:hover {
+            background-color:rgb(156, 156, 156); 
+        }
+
+        .collapsible:after {
+            content: "\2796"; /* Unicode character for "minus" sign (-) */
+            float: right;
+        }
+        
+        .active:after {
+            content: '\02795'; /* Unicode character for "plus" sign (+) */    
+        }
+        </style>
+</head>
+<body>
+    <div class="resumeContent">
+        <header>
+                <h2 class="name">Venkateswararao Patnam</h2>
+                <p class="roleGit">Full Stack Java Developer, <a class="gitHubLink" target="_blank" href="https://github.com/patnamvenki99">GitHub</a></p>
+                <p class="contactDetails">patnamvenki99@gmail.com</p>
+        </header>
+        <div class="workingExperiance">
+            <p class="subHeading">Working Experience</p>
+            <p>Tata Consultancy Services, Sep 2012 to Till date</p>
+        </div>
+        <div class="professionalSummary">
+            <p class="subHeading">Professional Summary</p>
+            <ul>
+                <li>Strong experience with multiple phases of an application like analysis, design, development, testing and deployment of highly scalable and efficient systems.</li>
+                <li>Highly skillful in backend technologies including <strong>Java, Spring, Transaction management, AOP, Spring boot, REST and SOAP webservices.</strong></strong></li>
+                <li>Experiance with micro service achietecture and related spring cloud technologies like <strong>eureka, resilliance4j, config server, API gateway </strong> (<a class="gitHubLink" target="_blank" href="https://github.com/patnamvenki99/trading-infra-microservices">Code</a>).</li>
+                <li>Working knowledge of frontend technologies such as <strong>reactjs, javascript, typescript, html, css</strong>, jquery (<a class="gitHubLink" target="_blank" href="https://github.com/patnamvenki99/bucket-list-ui">Code</a>, <a class="gitHubLink" target="_blank" href="https://patnamvenki99.github.io/bucket-list-ui/">Demo</a>).</li>
+                <li>Automation experience with python and devops tools  as <strong>JIRA, jenkins, jenkins pipelines, BitBucket, GitHub and AppDynamics</strong>.</li>
+                <li>Practical knowledge of oops concepts, multithreaded environments, <strong>design patterns</strong>, high cohesion and low coupling.</li>
+                <li>A very good team player in Various Agile methodologies like <strong>SCRUM, Test Driven Development (TDD), Incremental and Iteration methodology,</strong> Agile Development Testing using Software Development Life Cycle.</li>
+                <li>Automation testing experiance with unit, integreation, <strong>Front2Back and chaos testing</strong>.</li>
+                <li>Experience with build tools like ANT, Maven and gradle.</li>
+                <li>Database experiance with <strong>DB2</strong>, sybase and oracle.</li>
+                <li>Experiance with scheduling platforms like <strong>autosys</strong>.</li>
+                <li>Experiance with intra application messaging systems like <strong>MessageQueue, CPS</strong>.</li>
+                <li>Years of experiance in multiple areas of capital markets domain such as <strong>Tax Withholding, Position Services, Transacation reporting and Algorithemic Trading services.</strong>.</li> 
+                <li>Working experience with the collaboration of multiple teams like functional testing, production support across multiple locations Shanghai, London, New York.</li>
+                <li>Excellent written and verbal communication skills, Analytical, Problem Solving skills, strict attention to detail and ability to work independently, lead/work within a team environment.</li>
+            </ul>
+        </div>
+        <div class="educationalQualification">
+            <p class="subHeading">Educational Qualification</p>
+            <p>Bachelor of Technology in Computer Science and Engineering, GVPCOE, JNTU Kakinada, India</p>
+        </div>
+        <div class="projectSummary">
+            <p class="subHeading">Project Experience</p>
+            <button class="collapsible">TestOps Engineer, 2018 Feb - Till Date</button>
+            <div class="projectDetails">
+                <strong class="projectName">Application: Algorithemic Trading Services</strong>
+                <strong class="clientName">Morgan Stanley, Canada</strong>
+                <strong>Summary:</strong>
+                <p class="summary">ATS TestOps team is responsible for quality standards of the Algorithemic trading engines which runs both benchmark trading strategies like VWAP, TWAP and routing strataegies. We are also responsible to meet the PRA, MAR regulatory requirements and hygiene items.</p>
+                <strong>Responsibilities:</strong>
+                <ul class="responsibilities">
+                    <li>Develop and Maintain the dashboards for higher management about the status of regulatory requirments and hygiene items accross multiple engines.</li>                
+                    <li>Cover regulatory requirements of PRA and MAR with automated testcases.</li>
+                    <li>Make sure the accuracy of order flow through Front2Back testing.</li>
+                    <li>Highlight the stability concerns in the infrastructure through various means like chaos frameworks.</li>
+                    <li>Regression shepherding to make sure that no recent developments breaking the coverage.</li>
+                    <li>Work with different algo teams and make sure that they adhere to the standards and rollovers of the firm.</li>
+                </ul>
+            </div>
+            <button class="collapsible">Full Stack Java Developer, 2014 Sep - 2018 Jan</button>
+            <div class="projectDetails">
+                <strong class="projectName">Application: Asset Servicing</strong>
+                <strong class="clientName">Morgan Stanley, Glasgow, Chennai</strong>
+                <strong>Summary:</strong>
+                <p class="summary">ASRV is the strategic firm-wide system for position holders and client service personnel to manage corporate actions and dividends. The application integrates both the BU and Ops business processes by offerring multiple features like Position Capture, Notifications and Workflow, Election Management.</p>
+                <strong>Responsibilities:</strong>
+                <ul class="responsibilities">
+                    <li>Requirement Analysis with the collaboration of Business Users and Business Analysts.</li>
+                    <li>Prepare low level design, code the functionality and test them.</li>
+                    <li>Analyze root cause for any production issues and fix those.</li>
+                    <li>Worked on Swift MT565 automation that avoided a lot of manual work to do the elections which made the firm to save multiple Person days of works per month.</li>
+                    <li>Created reports to reduce the manual effort to compare the preference changes between NNR and ASRV.</li>
+                    <li>Adopted, Regulated the Standing instruction process to do the elections.</li>
+                    <li>Participate and contribute to story grooming, sprint planning and retrospective meetings.</li>
+                </ul>
+            </div>
+            <button class="collapsible">Full Stack Developer, 2013 Mar - 2014 Aug</button>
+            <div class="projectDetails">
+                <strong class="projectName">Application: Revolver</strong>
+                <strong class="clientName">Morgan Stanley, Chennai</strong>
+                <strong>Summary:</strong>
+                <p class="summary">Revolver is a tax withholding and reporting application, which runs on distributed file system. It is responsible for tax withholding on payments and generating regulatory tax reporting statements like 1099, 1042 for the Morgan Stanley Clients and complying with state reporting and IRS reporting requirements.</p>
+                <strong>Responsibilities:</strong>
+                <ul class="responsibilities">
+                    <li>Take part of the yearend 1099, 1042 reporting.</li>
+                    <li>Involved in developing the applications using Spring Framework for Dependency Injection.</li>
+                    <li>Coded mutliple UI changes using flex UI framework.</li>
+                    <li>Developed back-end logic with Core Java using technologies including Collection Framework, Multi-Threading.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script>
+        let coll = document.getElementsByClassName("collapsible");
+        for (let i = 0; i < coll.length; i++) {
+          coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            if (window.getComputedStyle(this.nextElementSibling).display === "grid") {
+                this.nextElementSibling.style.display = "none";
+            } else {
+                this.nextElementSibling.style.display = "grid";
+            } 
+          });
+        }
+        </script>
+</body>
+</html>
